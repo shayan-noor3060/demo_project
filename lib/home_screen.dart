@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:demo/second_screen.dart';
 
 class HomeScreen extends StatefulWidget {
+  static const String id = "home_screen";
   const HomeScreen({super.key});
 
   @override
@@ -52,10 +53,11 @@ class _HomeScreenState extends State<HomeScreen> {
         children: [
           TextButton(
               onPressed: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => SecondScreen()));
+                Navigator.pushNamed(context,SecondScreen.id);
+                // Navigator.push(context,
+                //     MaterialPageRoute(builder: (context) => SecondScreen()));
               },
-              child: Text('Home Screen'))
+              child: const Text('Home Screen'))
         ],
       ),
     );

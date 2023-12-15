@@ -1,5 +1,8 @@
+import 'package:demo/home_screen.dart';
 import 'package:flutter/material.dart';
+
 class SecondScreen extends StatefulWidget {
+  static const String id = "second_screen";
   const SecondScreen({super.key});
 
   @override
@@ -9,10 +12,19 @@ class SecondScreen extends StatefulWidget {
 class _SecondScreenState extends State<SecondScreen> {
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.blue,
-        title: Text('Second Screen'),
+        title: const Text('Second Screen'),
+      ),
+      body: Column(
+        children: [
+          TextButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              child: const Text('Back'))
+        ],
       ),
     );
   }
