@@ -27,9 +27,24 @@ class _HomeScreenState extends State<HomeScreen> {
                   backgroundImage: NetworkImage(
                       'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg'),
                 ),
-                accountName: Text('Shayan Noor'),
+                accountName: Text("Shayan Noor"),
                 accountEmail: Text('shayannoor48@gmail.com')),
-            ListTile()
+            ListTile(
+              leading: Icon(Icons.image),
+              title: Text('Gallery'),
+            ),
+            ListTile(
+              leading: Icon(Icons.account_circle_outlined),
+              title: Text('Account'),
+            ),
+            ListTile(
+              leading: Icon(Icons.access_alarm),
+              title: Text('Alarm'),
+            ),
+            ListTile(
+              leading: Icon(Icons.abc),
+              title: Text('ABC'),
+            ),
           ],
         ),
       ),
