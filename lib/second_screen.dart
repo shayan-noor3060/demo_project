@@ -18,12 +18,25 @@ class _SecondScreenState extends State<SecondScreen> {
         title: const Text('Second Screen'),
       ),
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           TextButton(
               onPressed: () {
                 Navigator.pop(context);
               },
-              child: const Text('Back'))
+              child: Center(
+                  child: Container(
+                      height: 40,
+                      width: 80,
+                      decoration: BoxDecoration(
+                          color: Colors.blue,
+                          borderRadius: BorderRadius.circular(30)),
+                      child: const Center(
+                          child:  Text(
+                        'Back',
+                        style: TextStyle(fontSize: 20,color: Colors.white),
+                      )))))
         ],
       ),
     );

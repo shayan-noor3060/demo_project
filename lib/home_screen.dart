@@ -32,7 +32,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 accountEmail: Text('shayannoor48@gmail.com')),
             ListTile(
               leading: Icon(Icons.image),
-              title: Text('Gallery'),
+              title: Text('Images'),
             ),
             ListTile(
               leading: Icon(Icons.account_circle_outlined),
@@ -50,14 +50,27 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
       ),
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           TextButton(
               onPressed: () {
-                Navigator.pushNamed(context,SecondScreen.id);
+                Navigator.pushNamed(context, SecondScreen.id);
                 // Navigator.push(context,
                 //     MaterialPageRoute(builder: (context) => SecondScreen()));
               },
-              child: const Text('Home Screen'))
+              child: Center(
+                child: Container(
+                  height: 40,
+                  width: 80,
+                  decoration: BoxDecoration(
+                      color: Colors.blue,
+                      borderRadius: BorderRadius.circular(40)),
+                  child: const Center(
+                      child:  Text('Next',
+                          style: TextStyle(fontSize: 20, color: Colors.white))),
+                ),
+              ))
         ],
       ),
     );
