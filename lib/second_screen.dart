@@ -14,8 +14,8 @@ class _SecondScreenState extends State<SecondScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.blue,
-        title: const Text('Second Screen'),
+        backgroundColor: Colors.green,
+        title: const Text('SECOND SCREEN'),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -30,12 +30,12 @@ class _SecondScreenState extends State<SecondScreen> {
                       height: 40,
                       width: 80,
                       decoration: BoxDecoration(
-                          color: Colors.blue,
+                          color: Colors.teal,
                           borderRadius: BorderRadius.circular(30)),
                       child: const Center(
-                          child:  Text(
+                          child: Text(
                         'Back',
-                        style: TextStyle(fontSize: 20,color: Colors.white),
+                        style: TextStyle(fontSize: 20, color: Colors.white),
                       )))))
         ],
       ),

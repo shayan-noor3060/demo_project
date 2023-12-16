@@ -15,7 +15,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.blue,
-        title: const Text('Home Screen'),
+        title: const Text('HOME SCREEN'),
       ),
       drawer: Drawer(
         child: ListView(
@@ -64,7 +64,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   height: 40,
                   width: 80,
                   decoration: BoxDecoration(
-                      color: Colors.blue,
+                      color: Colors.teal,
                       borderRadius: BorderRadius.circular(40)),
                   child: const Center(
                       child:  Text('Next',
